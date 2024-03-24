@@ -1,0 +1,24 @@
+From b009bd3fa28957dbe7ade658f479c358827c9d8e Mon Sep 17 00:00:00 2001
+From: Scott K Logan <logans@cottsay.net>
+Date: Fri, 22 Mar 2024 20:42:47 -0500
+Subject: [PATCH] Install the package.xml manifest
+
+---
+ rpm/ros-rolling-cyclonedds.spec | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/rpm/ros-rolling-cyclonedds.spec b/rpm/ros-rolling-cyclonedds.spec
+index b0434f0ab932..89253c9e8343 100644
+--- a/rpm/ros-rolling-cyclonedds.spec
++++ b/rpm/ros-rolling-cyclonedds.spec
+@@ -69,6 +69,7 @@ IoT project.
+ 
+ %install
+ %cmake_install
++install -m0644 -p -D package.xml %{buildroot}%{bloom_prefix}/share/%{pkg_name}/package.xml
+ 
+ 
+ %if 0%{?with_tests}
+-- 
+2.44.0
+
