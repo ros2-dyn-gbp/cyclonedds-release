@@ -1,4 +1,4 @@
-From c1ddf629ea55817077199a5c77a1ae2e12ab5d0e Mon Sep 17 00:00:00 2001
+From 17246a9756a17666aa433b4e1ffc380439bc4ecd Mon Sep 17 00:00:00 2001
 From: Scott K Logan <logans@cottsay.net>
 Date: Fri, 22 Mar 2024 20:42:47 -0500
 Subject: [PATCH] Install the package.xml manifest
